@@ -1,0 +1,23 @@
+{
+  "name": "1-clases-es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run build && node dist/main.js",
+    "build": "npx babel src/ -d dist/ --config-file ./babel.config.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9"
+  },
+  "dependencies": {
+    "core-js": "^3.36.0"
+  }
+}
