@@ -19,4 +19,4 @@ class Taxes {
     }
 }
 
-export default Taxes;
+export default Taxes; // Used to export the class
