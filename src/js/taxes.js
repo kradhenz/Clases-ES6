@@ -1,22 +1,22 @@
-class Tax {
-    constructor(aga, deductions) {
-        this.aga = aga;
-        this.deductions = deductions;
+class Taxes {
+    constructor(aga, deductions) { // aga: Annual Gross Amount
+        this._aga = aga;
+        this._deductions = deductions;
     }
-
     // Getter & Setter for 'aga'
     get aga() {
-        return this.aga;
+        return this._aga;
     }
-    set aga(newAga) {
-        this.aga = newAga;
+    set aga(aga) {
+        this._aga = aga;
     }
-
     // Getter & Setter for 'deductions'
     get deductions() {
-        return this.deductions;
+        return this._deductions;
     }
-    set deductions(newDeductions) {
-        this.deductions = newDeductions;
+    set deductions(deductions) {
+        this._deductions = deductions;
     }
 }
+
+export default Taxes;

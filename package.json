@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "npm run build && node dist/main.js",
     "build": "npx babel src/ -d dist/ --config-file ./babel.config.json",

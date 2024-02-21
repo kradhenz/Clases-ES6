@@ -1,29 +1,9 @@
-class Client {
-    constructor(name, tax) {
-        this._name = name; 
-        this._tax = tax;
-    }
+import Client from './client.js';
+import Taxes from './taxes.js';
 
-    // Getter & Setter for 'name'
-    get name() {
-        return this._name;
-    }
-    set name(newName) {
-        this._name = newName;
-    }
-    
-    // Getter & Setter for 'tax'
-    get tax() {
-        return this._tax;
-    }
-    set tax(newTax) {
-        this._tax = newTax;
-    }
+const taxClient1 = new Taxes(100000, 20000);
+const client1 = new Client("Jane");
+client1.tax = taxClient1;
 
-    calculateTax() {
-        return this.tax;
-    }
-}
+console.log(`El impuesto a pagar por ${client1.name} es: $${client1.calculateTax().toFixed(2)}`);
 
-var client1 = new Client("Roger", 15000);
-console.log(client1.calculateTax());
