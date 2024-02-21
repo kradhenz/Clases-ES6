@@ -2,7 +2,7 @@ import Client from './client.js';
 import Taxes from './taxes.js';
 
 // Evaluate only one client
-const taxClient1 = new Taxes(100000, 20000);
+const taxClient1 = new Taxes(125000, 15000);
 const client1 = new Client("Thomas");
 client1.tax = taxClient1;
 
